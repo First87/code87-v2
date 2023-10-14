@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 export default function Example() {
 
   return (
@@ -7,9 +7,13 @@ export default function Example() {
 
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-      <img
+      <Image
+          width={100}
+          height={100}
+          sizes="100vw"
+          priority={true} 
           src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
-          alt=""
+          alt="banner"
           className="absolute opacity-90 inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
         

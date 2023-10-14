@@ -16,7 +16,7 @@ export default function Navbar() {
           
           <div className="mobile-nav flex justify-between gap-5  ">
           <Image src="/logo87.png" height={80} width={80} alt="logo"
-            className="object-contain object-center lgn"
+            className="h-full w-full object-cover object-center lgn"
             />
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -79,19 +79,19 @@ export default function Navbar() {
               <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 {" "}
                 {/* Create a list of navigation links */}
-                <li className="text-white">
+                <li className="text-white1">
                   <Link href="/">หน้าแรก</Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white1">
                   <Link href="/#service">บริการของเรา</Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white1">
                   <Link href="/#about">เกี่ยวกับเรา</Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white1">
                   <Link href="/blog">บทความ</Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white1">
                   <Link href="/contact">ติดต่อเรา</Link>
                 </li>
               </ul>

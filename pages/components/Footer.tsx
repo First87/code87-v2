@@ -16,7 +16,8 @@ const Footer = (props: Props) => {
                 ที่อยู่
               </h2>
               <p className="text-white">
-                --------------------------------------------------------------------------------------------
+              Rock University Kumburgaz, Burgaz Cd. No:37, 34530 Büyükçekmece/İstanbu  
+
               </p>
             </div>
             <div>

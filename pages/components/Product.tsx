@@ -4,7 +4,7 @@ const products = [
       title: 'ฟรี',
       href: '#',
       description: (
-        "gh"
+        "ผู้เริ่มต้น"
       ),
       
      
@@ -19,38 +19,38 @@ const products = [
       },
     },
     {
-        id: 1,
+        id: 2,
         title: '4,900',
         href: '#',
         description:
           (
         
-          "uuuu"
+          "ขั้นสุง"
           ),
        
         datetime: '2020-03-16',
         category: { title: 'Basic', href: '#' },
         author: {
           name: 'รูปแบบ',
-          role: 'Co-Founder / CTO',
+          role: 'นักพัฒนา',
           href: '#',
           imageUrl:
             'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        id: 1,
+        id: 3,
         title: '6,900',
         href: '#',
         description:
-          ("kkk"
+          ("ผู้เชี่ยวชาญ"
           ),
         
         datetime: '2020-03-16',
         category: { title: 'Standard', href: '#' },
         author: {
-          name: 'Michael Foster',
-          role: 'Co-Founder / CTO',
+          name: 'รูปแบบ',
+          role: 'Pro',
           href: '#',
           imageUrl:
             'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',

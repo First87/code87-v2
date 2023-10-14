@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "./components/Navbar";
 import Maincontent from "./components/Maincontent";
+import About from "./components/About";
 import Footer from "./components/Footer";
 import Sponsor from "./components/Sponsor";
 import Blog from "./components/Product";
@@ -8,23 +9,25 @@ import React, { useEffect, useState } from 'react';
 import TestAbout from "./components/About"; // เปลี่ยนชื่อคอมโพเนนต์เป็น TestAbout
 
 function Page() {
-  const [showAbout, setShowAbout] = useState(false); // แสดงหน้า #about หลังจากโหลดเสร็จแล้ว
-
-  useEffect(() => {
-    // ให้เรียก setShowAbout(true) เพื่อแสดงหน้า About เมื่อหน้าเว็บโหลดเสร็จ
-    setShowAbout(true);
-  }, []); // ใช้ dependency array เป็น []
 
   return (
     <>
       <Head>
-        {/* โค้ดของ Head */}
+      <title>Code87</title>
+      <meta
+          name="description"
+          content="เราคือทีมพัฒนาที่พร้อมจะนำพาธุรกิจของคุณให้เติบโตอย่างไม่มีขีดจำกัด"
+        />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="robots" content="index,follow" />
+      <meta name="keywords" 
+      content="เว็บไซต์, ออกแบบเว็บไซต์, พัฒนาเว็บไซต์, SEO, การตลาดออนไลน์, การเพิ่มประสิทธิภาพ SEO, การสร้างเนื้อหาที่มีคุณค่า, การจัดการเนื้อหา, การวิเคราะห์คีย์เวิร์ด, การสร้างลิงค์, การใช้โซเชียลมีเดีย, การวิเคราะห์ผลการทำ SEO, เว็บไซต์ที่เป็นมือถือ, การเพิ่มประสิทธิภาพการโหลดหน้า, การให้บริการออกแบบเว็บไซต์" />
       </Head>
       <div>
         <Navbar />
         <Maincontent />
         <Blog />
-        {showAbout && <TestAbout />} {/* เปลี่ยนเป็น TestAbout */}
+        <About/>
         <Sponsor />
         <Footer />
       </div>
