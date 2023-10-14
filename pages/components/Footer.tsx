@@ -16,8 +16,8 @@ const Footer = (props: Props) => {
                 ที่อยู่
               </h2>
               <p className="text-white">
-              Rock University Kumburgaz, Burgaz Cd. No:37, 34530 Büyükçekmece/İstanbu  
-
+                Rock University Kumburgaz, Burgaz Cd. No:37, 34530
+                Büyükçekmece/İstanbu
               </p>
             </div>
             <div>
@@ -33,8 +33,8 @@ const Footer = (props: Props) => {
                 ติดตามเรา
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <div className="flex">
-                  <Link
+                <li>
+                  <a
                     href="#"
                     className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                   >
@@ -49,11 +49,11 @@ const Footer = (props: Props) => {
                         fillRule="evenodd"
                         d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
                         clipRule="evenodd"
-                      />
+                      ></path>
                     </svg>
-                    <span className="sr-only">Facebook page</span>
-                  </Link>
-                </div>
+                    <span class="sr-only">Facebook page</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
