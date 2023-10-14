@@ -20,15 +20,27 @@ html{
   top: 300px;
   position: relative;
 }
+.text87{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
 
-
-.navbar{
+.navbar1{
+  background-color: rgb(42, 42, 42);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #ececec;
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+}
+/* .navbar{
   background-color: rgb(42, 42, 42);
   color: #ffffff;
   position: fixed;
   z-index: 50;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-}
+} */
 .text-white1{
   color: #fffcfc;
   background-color: rgba(255, 255, 255, 0);
@@ -37,6 +49,7 @@ html{
   transition: ease-in-out 0.2s;
 
 }
+
 .text-white1:hover{
   color: #000000;
   background-color: rgb(255, 255, 255);

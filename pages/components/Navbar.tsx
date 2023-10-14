@@ -1,95 +1,62 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { useState } from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import { FiMenu } from 'react-icons/fi'
 
-export default function Navbar() {
-  const [navbar, setNavbar] = useState(false);
-
+const Nav = () => {
+    let name;
+    const [  open, setOpen ] = useState( false )
+    const [ seo, setSeo ] = useState("Test")
   return (
-    <div>
-      <nav className={`w-full navbar ${navbar ? 'bg-gray-800' : 'bg-gray-100'}`}>
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          <div className="mobile-nav flex justify-between gap-5">
-            <Image
-              src="/logo87.png"
-              height={80}
-              width={80}
-              alt="logo"
-              className="object-contain object-center lgn"
-            />
-            <div>
-              <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                <Link href="#">
-                  <p className={`logo-text ${navbar ? 'text-white' : 'text-white'}`}>
-                    Code87
-                  </p>
-                </Link>
-              </div>
-            </div>
-            <div className="md:hidden">
-              <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                onClick={() => setNavbar(!navbar)}
-              >
-                {navbar ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                )}
-              </button>
-            </div>
-          </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? "block" : "hidden"
-              }`}
-            >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
-                  <Link href="/">หน้าแรก</Link>
+    <>
+    <header className="border-b border-gray-300 py-2 navbar1">
+        <div className="flex justify-between items-center xl:max-w-7xl xl:mx-auto max-w-full px-[8%] flex-wrap">
+            <Link href="/">
+        <Image
+            src="/logo87.png"
+            alt='logo'
+            width={80}
+            height={80}
+            className='cursor-pointer'
+          />
+          </Link>
+          <h1
+          className='text87 text-center'>Code87</h1>
+          <FiMenu className="lg:hidden block h-6 w-6 cursor-pointer" onClick={() => setOpen(!open)} />
+          <nav className={`${open ? "block" : "hidden"} lg:flex lg:items-center lg:w-auto w-full`}>
+            <ul className="text-base text-gray-600 lg:flex lg:justify-between">
+                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                    <Link href="/">หน้าแรก</Link>
+
                 </li>
-                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
-                  <Link href="/#service">บริการของเรา</Link>
+                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                    <Link href="#service">บริการของเรา</Link>
+    
+
                 </li>
-                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
-                  <Link href="/#about">เกี่ยวกับเรา</Link>
+                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                    <Link href="/#about">เกี่ยวกับเรา</Link>
+
                 </li>
-                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
-                  <Link href="/blog">บทความ</Link>
+                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                    <Link href="/blog">บทความ</Link>
+
                 </li>
-                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
-                  <Link href="/contact">ติดต่อเรา</Link>
+
+                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                <Link href="/contact">ติดต่อเรา</Link>
+
                 </li>
-              </ul>
-            </div>
-          </div>
+                
+            </ul>
+         </nav>
         </div>
-      </nav>
-    </div>
-  );
+
+    </header>
+
+    </>
+    
+  )
 }
+
+export default Nav
