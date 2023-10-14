@@ -5,35 +5,31 @@ import { useState } from "react";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
-
   return (
     <div>
-      <nav className="w-full bg-gray-800 navbar">
-        {" "}
-        {/* Create a navigation bar with background color and shadow */}
+      <nav className={`w-full navbar ${navbar ? 'bg-gray-800' : 'bg-gray-100'}`}>
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          {" "}
-          
-          <div className="mobile-nav flex justify-between gap-5  ">
-          <Image src="/logo87.png" height={80} width={80} alt="logo"
-            className="object-contain object-center lgn"
+          <div className="mobile-nav flex justify-between gap-5">
+            <Image
+              src="/logo87.png"
+              height={80}
+              width={80}
+              alt="logo"
+              className="object-contain object-center lgn"
             />
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                {" "}
-                
                 <Link href="#">
-                  <p className="logo-text">
+                  <p className={`logo-text ${navbar ? 'text-white' : 'text-gray-800'}`}>
                     Code87
                   </p>
                 </Link>
               </div>
             </div>
-
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                onClick={() => setNavbar(!navbar)} // Create a button to toggle the mobile menu and set the 'navbar' state accordingly
+                onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
                   <svg
@@ -67,31 +63,26 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "block" : "hidden"
               }`}
             >
-              {" "}
-              {/* Create a menu that is hidden on larger screens */}
-              <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                {" "}
-                {/* Create a list of navigation links */}
-                <li className="text-white1">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
                   <Link href="/">หน้าแรก</Link>
                 </li>
-                <li className="text-white1">
+                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
                   <Link href="/#service">บริการของเรา</Link>
                 </li>
-                <li className="text-white1">
+                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
                   <Link href="/#about">เกี่ยวกับเรา</Link>
                 </li>
-                <li className="text-white1">
+                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
                   <Link href="/blog">บทความ</Link>
                 </li>
-                <li className="text-white1">
+                <li className={`text-white1 ${navbar ? 'text-white' : 'text-gray-800'}`}>
                   <Link href="/contact">ติดต่อเรา</Link>
                 </li>
               </ul>
