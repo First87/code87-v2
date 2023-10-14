@@ -34,7 +34,7 @@ const Footer = (props: Props) => {
                 ติดตามเรา
               </h2>
               <Link href="#">
-                <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                {/* <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white"> */}
                   <svg
                     className="w-4 h-4"
                     aria-hidden="true"
@@ -49,7 +49,7 @@ const Footer = (props: Props) => {
                     ></path>
                   </svg>
                   <span className="sr-only">Facebook page</span>
-                </a>
+                {/* </a> */}
               </Link>
             </div>
           </div>
