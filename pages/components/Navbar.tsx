@@ -24,26 +24,26 @@ const Nav = () => {
           className='text87 text-center'>Code87</h1>
           <FiMenu className="lg:hidden block h-6 w-6 cursor-pointer" onClick={() => setOpen(!open)} />
           <nav className={`${open ? "block" : "hidden"} lg:flex lg:items-center lg:w-auto w-full`}>
-            <ul className="text-base text-gray-600 lg:flex lg:justify-between">
-                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+            <ul className="text-base text-white lg:flex lg:justify-between">
+                <li className="lg:px-5 py-2 hover:text-red-600 font-semibold">
                     <Link href="/">หน้าแรก</Link>
 
                 </li>
-                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                <li className="lg:px-5 py-2 hover:text-red-600 font-semibold">
                     <Link href="#service">บริการของเรา</Link>
     
 
                 </li>
-                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                <li className="lg:px-5 py-2 hover:text-red-600 font-semibold">
                     <Link href="/#about">เกี่ยวกับเรา</Link>
 
                 </li>
-                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                <li className="lg:px-5 py-2 hover:text-red-600 font-semibold">
                     <Link href="/blog">บทความ</Link>
 
                 </li>
 
-                <li className="lg:px-5 py-2 hover:text-white font-semibold">
+                <li className="lg:px-5 py-2 hover:text-red-600 font-semibold">
                 <Link href="/contact">ติดต่อเรา</Link>
 
                 </li>
