@@ -26,7 +26,7 @@ const Footer = (props: Props) => {
                 ติดต่อเรา
               </h2>
               <p className="text-white">
-                Email: code87@hotmail.com <br /> Phone: 092-756-2258
+                Email: code87@hotmail.com <br /> Phone: 028-787-878
               </p>
             </div>
             <div>
