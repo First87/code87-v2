@@ -20,7 +20,7 @@ export default function Navbar() {
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 <Link href="#">
-                  <p className={`logo-text ${navbar ? 'text-white' : 'text-gray-800'}`}>
+                  <p className={`logo-text ${navbar ? 'text-white' : 'text-white'}`}>
                     Code87
                   </p>
                 </Link>
