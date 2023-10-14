@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaLine } from "react-icons/fa";
 import Link from "next/link";
+
 type Props = {};
 
 const Footer = (props: Props) => {
@@ -12,7 +13,7 @@ const Footer = (props: Props) => {
           <div className="mb-2 md:mb-0"></div>
           <div className="sm: grid pl-10 grid-cols-1 gap-8 md:gap-10 md:grid-cols-3 ft-grid">
             <div>
-              <h2 className="mb-6  text-sm font-semibold text-ft uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-ft uppercase">
                 ที่อยู่
               </h2>
               <p className="text-white">
@@ -21,7 +22,7 @@ const Footer = (props: Props) => {
               </p>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-ft uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-ft uppercase">
                 ติดต่อเรา
               </h2>
               <p className="text-white">
@@ -29,32 +30,27 @@ const Footer = (props: Props) => {
               </p>
             </div>
             <div>
-              <h2 className=" pb-12 text-sm font-semibold text-ft uppercase ">
+              <h2 className="pb-12 text-sm font-semibold text-ft uppercase">
                 ติดตามเรา
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              <Link href="#">
+                <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg
+                    className="w-4 h-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 8 19"
                   >
-                    <svg
-                      className="w-4 h-4"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 8 19"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span class="sr-only">Facebook page</span>
-                  </a>
-                </li>
-              </ul>
+                    <path
+                      fillRule="evenodd"
+                      d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="sr-only">Facebook page</span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
