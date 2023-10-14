@@ -16,7 +16,7 @@ export default function Navbar() {
           
           <div className="mobile-nav flex justify-between gap-5  ">
           <Image src="/logo87.png" height={80} width={80} alt="logo"
-            className="h-full w-full object-cover object-center lgn"
+            className="object-contain object-center lgn"
             />
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
