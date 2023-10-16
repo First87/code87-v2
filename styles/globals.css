@@ -30,9 +30,6 @@ html{
   background-color: rgb(42, 42, 42);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   color: #ececec;
-  position: fixed;
-  z-index: 50;
-  width: 100vw;
 }
 /* .navbar{
   background-color: rgb(42, 42, 42);
